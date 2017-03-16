@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>amazing</title>
+    <link href='//fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <script type="text/javascript" src="http://www.cornify.com/js/cornify.js"></script>
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <h1>most ESPECIALLY in times of despair,
+      we must work to amplify what we love about life,
+      what is astonishing and marvelous about each human being</h1>
+    <h3>remember! you contain within you a marvelous cosmos</h3>
+    <h4>just like that fellow over there</h4>
+    <h5>and that lady over there</h5>
+
+      <label for="despair and amazement">
+        and while i despair because <input type="text" name="getAmazingFact" />
+      </label>
+        <input type="button" id="myButton" value="help!"/>
+
+    <div id="amazingFact"></div>
+    <script>
+    const random = (arr) => {
+      return arr[Math.floor(Math.random() * arr.length)];
+    }
+
+    document.getElementById("myButton").addEventListener("click", function() {
+      event.preventDefault();
+      const facts = [
+        "The human brain can read up to 1,000 words per minute.",
+        "An adult is made up of 7,000,000,000,000,000,000,000,000,000 (7 octillion) atoms. For perspective, there's a 'measly' 300,000,000,000 (300 billion) stars in our galaxy.",
+        "When you blush, the lining of your stomach blushes too.",
+        "The human eye is so sensitive that if the Earth were flat, you could spot a candle flickering at night from up to 30 miles away.",
+        "With the 60,000 miles of blood vessels inside the average human body, you could circumnavigate Earth two and a half times.",
+        "Inside your belly button are thousands of bacteria that form an ecosystem the size of an entire rainforest.",
+        "In 30 minutes, the human body gives off enough heat to bring a gallon of water to the boil.",
+        "Human bone is as strong as granite. A block of bone the size of a matchbox could support nine tonnes of weight.",
+        "The focusing muscles in your eyes move around 100,000 times a day. To give your leg muscles the same workout, you'd need to walk 50 miles.",
+        "For every pound of fat or muscle gained, your body creates seven miles of new blood vessels.",
+        'Along with the five traditional senses of sound, sight, touch, smell and taste, humans have 15 “other senses." These include balance, temperature, pain and time as well as internal senses for suffocation, thirst, and fullness.',
+        "The largest bone in the human body is the femur. It can support 30 times the weight of a person's body. Ounce for ounce, that's stronger than steel.",
+        "In an adult human, 25% of their bones are in the feet.",
+        "There are more bacteria in a human mouth than there are people in the world.",
+        "The body can detect taste in .0015 seconds, which is faster than the blink of an eye.",
+        "The brain contains 86 billion nerve cells joined by 100 trillion connections. This is more than the number of stars in the Milky Way.",
+        "Like fingerprints, each human tongue has its own unique print.",
+        "Every hour, humans shed about 600,000 particles of skin, or about 1.5 pounds every year. By the time a person is 70 years old, they will have lost about 105 pounds of skin.",
+        "The average human produces 25,000 quarts of saliva in a lifetime, enough to fill two swimming pools.",
+        "The lining in a person's stomach is replaced every 4 to 5 days to prevent it from digesting itself.",
+        "An adult humans small intestine is about 18 to 23 feet long, which is about four times as long as an adult is tall.",
+        "A human sneeze can travel about 100 mph or more.",
+        "Fingernails grow faster on the hand a person writes with. They also grow faster than toenails, and faster on longer fingers.",
+        "A person’s feet has about 500,000 sweat glands and can produce about a pint of sweat a day.",
+        "The strongest muscle in the human body is the masseter, or the jaw muscle.",
+        "The fastest muscles in a human body are the ones that make the eyes blink. They can contract in less than one-hundredth of a second. In just one day, a person may blink their eyes over 11,500 times.",
+        "f you spread out an adult human’s brain, it would be about the size of a pillowcase.",
+        "A human eye can distinguish between approximately 10 million different colors."
+      ];
+      cornify_add();
+      alert(`i will also ponder this!  ${random(facts)} W O W`);
+
+      // document.getElementById("amazingFact").innerHTML = `ponder this!  ${random(facts)}`;
+    });
+
+    </script>
+  </body>
+
+</html>
